@@ -1,0 +1,10 @@
+dependencies:
+  idf: '>=5'
+description: ESP-IDF component for heatshrink, a library for embedded compression.
+issues: https://github.com/laride/heatshrink/issues
+license: ISC
+repository: git://github.com/laride/heatshrink.git
+repository_info:
+  commit_sha: a0d2650edea4762ea2ba71b71a02d9ed81da1841
+  path: .
+version: 0.4.1

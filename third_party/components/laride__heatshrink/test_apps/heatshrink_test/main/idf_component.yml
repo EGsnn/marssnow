@@ -1,0 +1,4 @@
+dependencies:
+  heatshrink:
+    version: "*"
+    override_path: "../../../"

@@ -1,0 +1,12 @@
+menu "Mars app EAF renderer"
+
+    config GFX_EAF_JPEG_DECODE_SUPPORT
+        bool "Enable JPEG decoding in EAF resources"
+        default y
+
+    config GFX_EAF_HEATSHRINK_SUPPORT
+        bool "Enable Heatshrink decoding in EAF resources"
+        default y
+        depends on HEATSHRINK_DYNAMIC_ALLOC || (HEATSHRINK_STATIC_WINDOW_BITS = 8 && HEATSHRINK_STATIC_LOOKAHEAD_BITS = 4)
+
+endmenu

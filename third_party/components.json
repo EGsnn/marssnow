@@ -1,0 +1,57 @@
+[
+  {
+    "component": "espressif2022__esp_emote_gfx",
+    "version": "3.0.5",
+    "metadataSha256": "084122e93c8ee399a3d28258fd4b13e2da763ec56ae26cb1f7b0c07a06068e0e"
+  },
+  {
+    "component": "espressif__cjson",
+    "version": "1.7.19~2",
+    "metadataSha256": "8cf02081bf037b8d0b89e613f5803d463d4a93d2eab892c4bbe20020cdbd4396"
+  },
+  {
+    "component": "espressif__cmake_utilities",
+    "version": "0.5.0",
+    "metadataSha256": "46d6f91d8d8cd538e3b19dbf367337a6bc443a6135f63394bf13bc55c66f4d5e"
+  },
+  {
+    "component": "espressif__esp_audio_codec",
+    "version": "2.5.0",
+    "metadataSha256": "fba749aaed7749779447d0b1e7eb27988e3dee4567a172153537b1d3314321e8"
+  },
+  {
+    "component": "espressif__esp_codec_dev",
+    "version": "1.6.2",
+    "metadataSha256": "ea6b438b9f9fb3d029fe22fa1bff0ed2c38efe23e7511f5fa23477845e470f52"
+  },
+  {
+    "component": "espressif__esp_lcd_touch",
+    "version": "1.2.1",
+    "metadataSha256": "007dc69052e52d0556b410f45dded316237b2434878767fb379f2b9bd84e4616"
+  },
+  {
+    "component": "espressif__esp_new_jpeg",
+    "version": "1.0.2",
+    "metadataSha256": "9f042dbeaf7c206d08805ece59a286f642f4829a4f2cb976f46f23721496f6ad"
+  },
+  {
+    "component": "espressif__esp_websocket_client",
+    "version": "1.8.0",
+    "metadataSha256": "0d557ddf7854668dbce7e349de51bc17c31465dd8f40d6269e0cecfc5ccef48e"
+  },
+  {
+    "component": "espressif__freetype",
+    "version": "2.14.3~1",
+    "metadataSha256": "578f95a951a3c517d8a6b474ad00f79cd545056dc07fbdfbd03e0d2fe26f3f11"
+  },
+  {
+    "component": "laride__heatshrink",
+    "version": "0.4.1",
+    "metadataSha256": "7a6a8a6131b46b8f0639049760a8bf46fdf10a269f826f1d7d7c8edc7f47f596"
+  },
+  {
+    "component": "lvgl__lvgl",
+    "version": "9.5.0",
+    "metadataSha256": "c713947eaf831339d5949a9e50827faac2be4b67f20501bc8b5e5dc8f04c6816"
+  }
+]

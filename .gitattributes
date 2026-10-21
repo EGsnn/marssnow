@@ -1,0 +1,8 @@
+# Preserve vendored line endings and license text verbatim.
+third_party/** -whitespace
+**/OFL-NotoSansSC.txt -whitespace
+*.bin binary
+*.a binary
+*.ttf binary
+# Unified patch context lines intentionally contain a single space.
+patches/** -whitespace

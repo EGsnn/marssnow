@@ -1,0 +1,28 @@
+dependencies:
+  cmake_utilities:
+    version: 0.*
+  espressif/esp_lcd_touch:
+    public: true
+    version: '>=1.0'
+  espressif/esp_new_jpeg:
+    public: true
+    version: 1.*
+  espressif/freetype:
+    version: 2.*
+  idf:
+    version: '>=5.0'
+  laride/heatshrink:
+    version: ^0.4.1
+  lvgl/lvgl:
+    public: true
+    version: '*'
+description: ESP Emote GFX - A lightweight UI graphics library for compact embedded
+  displays.
+documentation: https://espressif2022.github.io/esp_emote_gfx/en/index.html
+issues: https://github.com/espressif2022/esp_emote_gfx/issues
+repository: git://github.com/espressif2022/esp_emote_gfx.git
+repository_info:
+  commit_sha: 47f9fd04a44d5d2b5dba8c14f73e4fc0f76b21f9
+  path: .
+url: https://github.com/espressif2022/esp_emote_gfx
+version: 3.0.5

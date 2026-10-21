@@ -1,0 +1,14 @@
+build/
+**/build/
+**/sdkconfig
+**/sdkconfig.old
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+!.env.example
+.venv*/
+*.log
+backups/
+device-backups/

@@ -1,0 +1,4 @@
+esp-docs>=2.1.5
+breathe>=4.35.0
+Babel>=2.12.0
+

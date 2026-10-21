@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "defaults": {
+    "layout": {
+      "family": "landscape",
+      "safeInset": 8
+    },
+    "tokens": {
+      "background": 2147,
+      "surface": 6383,
+      "text": 61343,
+      "accent": 15856,
+      "gap": 8,
+      "radius": 8,
+      "fontScale": 2,
+      "touchMin": 36
+    },
+    "motion": {
+      "fps": 50,
+      "transitionMs": 240,
+      "modalMs": 180,
+      "ease": "out",
+      "tier": "balanced",
+      "modalEase": "in-out"
+    }
+  },
+  "layouts": {
+    "landscape-small": {
+      "layout": {
+        "family": "landscape",
+        "safeInset": 8
+      }
+    },
+    "round-small": {
+      "layout": {
+        "family": "round",
+        "safeInset": 12
+      },
+      "tokens": {
+        "gap": 10,
+        "radius": 16,
+        "touchMin": 40
+      }
+    },
+    "portrait-small": {
+      "layout": {
+        "family": "portrait",
+        "safeInset": 8
+      },
+      "tokens": {
+        "touchMin": 36
+      }
+    }
+  },
+  "themes": {
+    "mars-box": {
+      "tokens": {
+        "accent": 15856
+      }
+    },
+    "mars-orbit": {
+      "tokens": {
+        "accent": 44985,
+        "background": 4291,
+        "text": 61373,
+        "surface": 6500
+      }
+    },
+    "mars-passport": {
+      "tokens": {
+        "background": 6339,
+        "surface": 8452,
+        "text": 61309,
+        "accent": 54970,
+        "radius": 4
+      }
+    }
+  },
+  "motions": {
+    "balanced": {
+      "motion": {
+        "fps": 50,
+        "transitionMs": 240,
+        "modalMs": 180,
+        "ease": "out",
+        "tier": "balanced",
+        "modalEase": "in-out"
+      }
+    },
+    "rich": {
+      "motion": {
+        "fps": 60,
+        "transitionMs": 280,
+        "modalMs": 200,
+        "ease": "in-out",
+        "tier": "rich",
+        "modalEase": "in-out"
+      }
+    },
+    "light": {
+      "motion": {
+        "fps": 25,
+        "transitionMs": 120,
+        "modalMs": 100,
+        "ease": "out",
+        "tier": "light",
+        "modalEase": "out"
+      }
+    }
+  },
+  "devices": {
+    "alientek-atk-box": {
+      "layout": "landscape-small",
+      "theme": "mars-box",
+      "motion": "balanced",
+      "overrides": {}
+    },
+    "waveshare-esp32-s3-touch-lcd-1-46": {
+      "layout": "round-small",
+      "theme": "mars-orbit",
+      "motion": "rich",
+      "overrides": {}
+    },
+    "folotoy-ai-passport": {
+      "layout": "portrait-small",
+      "theme": "mars-passport",
+      "motion": "light",
+      "overrides": {}
+    }
+  }
+}

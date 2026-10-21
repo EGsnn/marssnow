@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "alientek-atk-box",
+  "manufacturer": "alientek",
+  "model": "ATK-DNESP32S3-BOX",
+  "hardwareRevision": "legacy-reference",
+  "chip": "esp32s3",
+  "architecture": "xtensa",
+  "flashBytes": 16777216,
+  "psramBytes": 8388608,
+  "display": {
+    "width": 320,
+    "height": 240,
+    "colorDepth": 16,
+    "controller": "st7789",
+    "bus": "i80",
+    "clockHz": 10000000,
+    "touch": true
+  },
+  "input": {
+    "keys": 3,
+    "type": "gpio-expander",
+    "touchController": "chsc5432"
+  },
+  "audio": {
+    "codec": "es8311",
+    "input": true,
+    "output": true,
+    "address": 24
+  },
+  "battery": {
+    "gauge": null
+  },
+  "radio": {
+    "wifi": true,
+    "ble": true,
+    "classicBluetooth": false
+  },
+  "nfc": {
+    "tag": null,
+    "mcuAccessible": false
+  },
+  "pins": {
+    "i2c_sda": 48,
+    "i2c_scl": 45,
+    "lcd_cs": 1,
+    "lcd_dc": 2,
+    "lcd_wr": 42,
+    "lcd_rd": 41,
+    "lcd_d0": 40,
+    "lcd_d1": 39,
+    "lcd_d2": 38,
+    "lcd_d3": 12,
+    "lcd_d4": 11,
+    "lcd_d5": 10,
+    "lcd_d6": 9,
+    "lcd_d7": 46,
+    "key": 0,
+    "i2s_mclk": -1,
+    "i2s_bclk": 21,
+    "i2s_ws": 13,
+    "i2s_dout": 14,
+    "i2s_din": 47
+  },
+  "firmwares": [
+    "mars",
+    "probe"
+  ],
+  "dynamicPackageFormat": "marsapp-v2-xtensa",
+  "references": [
+    "firmware/mars_system/components/mars_bsp/box3_board.c",
+    "firmware/mars_system/components/mars_media/mars_media.c"
+  ]
+}

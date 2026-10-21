@@ -1,0 +1,11 @@
+menu "Mars system"
+
+config MARS_LAYOUT_V2
+    bool "Use the 16 MiB v2 system/app/assets layout"
+    default y
+    help
+        Embed the shared Chinese font in the system image and load the single
+        desktop wallpaper from the mmap assets partition. The uidata SPIFFS
+        partition then stores only user UI data and settings.
+
+endmenu

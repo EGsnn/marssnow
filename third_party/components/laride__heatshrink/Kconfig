@@ -1,0 +1,50 @@
+menu "Heatshrink Configuration"
+
+    config HEATSHRINK_DYNAMIC_ALLOC
+        bool "Enable dynamic allocation"
+        default y
+        help
+            If enabled, memory for the encoder/decoder will be allocated dynamically.
+            If disabled, static allocation parameters must be configured.
+
+    if !HEATSHRINK_DYNAMIC_ALLOC
+
+    config HEATSHRINK_STATIC_INPUT_BUFFER_SIZE
+        int "Static Input Buffer Size"
+        default 32
+        range 1 65535
+        help
+             Size of the input buffer when using static allocation.
+
+    config HEATSHRINK_STATIC_WINDOW_BITS
+        int "Static Window Bits (4-15)"
+        default 8
+        range 4 15
+        help
+            Log2 of the sliding window size. Larger windows find more matches but use more memory.
+            Memory usage is 2^N bytes.
+
+    config HEATSHRINK_STATIC_LOOKAHEAD_BITS
+        int "Static Lookahead Bits (3-14)"
+        default 4
+        range 3 14
+        help
+            Log2 of the lookahead size. Controls how far ahead patterns can be matched.
+            Must be strictly less than Window Bits.
+
+    endif
+
+    config HEATSHRINK_DEBUGGING_LOGS
+        bool "Enable debugging logs"
+        default n
+        help
+            Enable verbose debugging output.
+
+    config HEATSHRINK_USE_INDEX
+        bool "Use indexing for faster compression"
+        default y
+        help
+             Use an index to speed up compression at the cost of memory usage.
+             Adds 2^(window_size+1) bytes to memory usage.
+
+endmenu

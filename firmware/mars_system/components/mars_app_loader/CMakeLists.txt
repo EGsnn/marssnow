@@ -1,0 +1,24 @@
+# 火星动态应用加载器组件
+idf_component_register(
+    SRCS
+        "src/mars_elf.c"
+        "src/mars_reloc.c"
+        "src/mars_app_heap.c"
+        "src/mars_app_loader.c"
+        "src/mars_exports_def.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        esp_partition
+        esp_common
+        heap
+        esp_timer
+        log
+        freertos
+        driver
+        mars_services
+        mars_audio_stream
+        mars_common
+        mars_core
+        espressif__cjson
+)

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "waveshare-esp32-s3-touch-lcd-1-46",
+  "manufacturer": "waveshare",
+  "model": "ESP32-S3-Touch-LCD-1.46",
+  "hardwareRevision": "official-reference",
+  "chip": "esp32s3",
+  "architecture": "xtensa",
+  "flashBytes": 16777216,
+  "psramBytes": 8388608,
+  "display": {
+    "width": 412,
+    "height": 412,
+    "shape": "round",
+    "viewport": {
+      "x": 44,
+      "y": 86,
+      "width": 320,
+      "height": 240
+    },
+    "colorDepth": 16,
+    "controller": "spd2010",
+    "bus": "qspi",
+    "clockHz": 40000000,
+    "touch": true
+  },
+  "input": {
+    "keys": 2,
+    "type": "gpio",
+    "touchController": "spd2010",
+    "touchAddress": 83
+  },
+  "audio": {
+    "codec": "pcm5101",
+    "input": true,
+    "output": true,
+    "microphone": "i2s-right-slot",
+    "independentClocks": true
+  },
+  "battery": {
+    "gauge": null
+  },
+  "radio": {
+    "wifi": true,
+    "ble": true,
+    "classicBluetooth": false
+  },
+  "nfc": {
+    "tag": null,
+    "mcuAccessible": false
+  },
+  "pins": {
+    "i2c_sda": 11,
+    "i2c_scl": 10,
+    "lcd_cs": 21,
+    "lcd_dc": -1,
+    "lcd_sclk": 40,
+    "lcd_d0": 46,
+    "lcd_d1": 45,
+    "lcd_d2": 42,
+    "lcd_d3": 41,
+    "lcd_backlight": 5,
+    "touch_int": 4,
+    "power_enable": 7,
+    "power_key": 6,
+    "key": 0,
+    "i2s_mclk": -1,
+    "i2s_bclk": 48,
+    "i2s_ws": 38,
+    "i2s_dout": 47,
+    "i2s_din": 39,
+    "mic_bclk": 15,
+    "mic_ws": 2
+  },
+  "expander": {
+    "controller": "tca9554",
+    "address": 32,
+    "touchResetBit": 0,
+    "displayResetBit": 1
+  },
+  "firmwares": [
+    "mars",
+    "probe"
+  ],
+  "dynamicPackageFormat": "marsapp-v2-xtensa",
+  "probeRequiresPsram": true,
+  "references": [
+    "https://docs.waveshare.com/ESP32-S3-Touch-LCD-1.46",
+    "https://github.com/waveshareteam/ESP32-S3-Touch-LCD-1.46/tree/fda89ff2ff32eb1bce561901225c6a36fa684237"
+  ]
+}
